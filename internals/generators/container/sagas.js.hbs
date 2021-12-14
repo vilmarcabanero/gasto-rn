@@ -1,0 +1,12 @@
+import { call, put, takeLatest } from 'redux-saga/effects';
+import createAPI from '../../api/createAPI';
+import * as Actions from './{{ dashCase name }}.actions';
+import * as Types from './{{ dashCase name }}.types';
+
+function* makeGet{{ properCase name }}(): any {
+  const api = yield createAPI();
+  const response = yield call(api.call, 'get{{ properCase name }}');
+  yield put(Actions.set{{ properCase name }}(response.data));
+}
+
+export const {{ camelCase name }}Sagas = [takeLatest(Types.GET_{{ constantCase name }}, makeGet{{ properCase name }})];

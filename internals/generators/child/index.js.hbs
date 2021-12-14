@@ -1,0 +1,19 @@
+import React from 'react';
+{{!-- import { View } from 'react-native'; --}}
+import { Text, Surface } from 'react-native-paper';
+
+// import { useSelector, useDispatch } from 'react-redux';
+import styles from './{{ dashCase  name }}.styles';
+// import * as Actions from '../task.actions';
+
+export default function {{ properCase  name }}() {
+  // const dispatch = useDispatch();
+  // const { get{{ properCase name }} } = Actions;
+  // const { data } = useSelector(state => state.{{ camelCase name }}Reducer);
+
+  return (
+    <Surface style={styles.container}>
+      <Text>{{ properCase  name }} Screen</Text>
+    </Surface>
+  );
+}

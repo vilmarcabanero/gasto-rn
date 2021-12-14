@@ -1,0 +1,27 @@
+import React from 'react';
+// import { View } from 'react-native'; 
+import { Text, Surface, Button } from 'react-native-paper';
+
+// import { useSelector, useDispatch } from 'react-redux';
+import styles from './{{ dashCase  name }}.styles';
+// import * as Actions from './{{ dashCase  name }}.actions';
+
+export default function {{ properCase  name }}(props: any) {
+  const {navigation} = props;
+  // const dispatch = useDispatch();
+  // const { get{{ properCase name }} } = Actions;
+  // const { data } = useSelector(state => state.{{ camelCase name }}Reducer);
+
+  return (
+    <Surface style={styles.container}>
+      <Text>{{ properCase  name }} Screen</Text>
+      <Button
+        mode="contained"
+        uppercase={false}
+        dark={true}
+        onPress={() => navigation.popToTop()}>
+        Go to home
+      </Button>
+    </Surface>
+  );
+}

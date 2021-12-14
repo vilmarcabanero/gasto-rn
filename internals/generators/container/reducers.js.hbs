@@ -1,0 +1,18 @@
+/* {{ properCase name }} Reducer
+ * handles {{ properCase name }} states in the app
+ */
+import createReducer from '../../createReducer';
+import * as Types from './{{ dashCase  name }}.types';
+
+export const initialState = {
+  data: [],
+};
+
+export const {{ camelCase  name }}Reducer = createReducer(initialState, {
+  [Types.SET_{{ constantCase  name }}](state: any, {data}: any) {
+    return {
+      ...state,
+      data,
+    };
+  },
+});

@@ -1,0 +1,17 @@
+/*
+ * Reducer actions related with {{ properCase name }}
+ */
+import * as Types from './{{ dashCase  name }}.types';
+
+export function set{{ properCase name }}(data: any) {
+  return {
+    type: Types.SET_{{ constantCase  name }},
+    data,
+  };
+}
+
+export function get{{ properCase  name }}() {
+  return {
+    type: Types.GET_{{ constantCase  name }},
+  };
+}
